@@ -1,0 +1,16 @@
+<html>
+<body>
+    <div>
+        <form method="post">
+            <input type="text" name="number" placeholder="номер маршрута"/>
+            <input type="datetime-local" name="time" placeholder="время отправления"/>
+            <button type="submit">Заказать билет</button>
+        </form>
+    </div>
+    {{#tickets}}
+    <div>
+        <span>Номер Вашего заказа: </span><b>{{id}}</b>
+    </div>
+    {{/tickets}}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<body>
+    <div>Добавление маршрутов</div>
+    <div>
+        <form method="post">
+            <input type="text" name="number" placeholder="номер маршрута"/>
+            <input type="datetime-local" name="time" placeholder="время отправления"/>
+        <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <div>Доступные маршруты</div>
+    {{#routes}}
+    <div>
+        <span>{{number}}</span>
+        <span>{{time}}</span>
+    </div>
+    {{/routes}}
+</body>
+</html>

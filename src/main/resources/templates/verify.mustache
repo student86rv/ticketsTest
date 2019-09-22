@@ -1,0 +1,16 @@
+<html>
+<body>
+    <div>Проверка состояния заказа</div>
+    <div>
+        <form method="post">
+            <input type="text" name="id" placeholder="номер заказа"/>
+            <button type="submit">Проверить</button>
+        </form>
+    </div>
+    {{#report}}
+    <div>
+        <b>{{status}}</b>
+    </div>
+    {{/report}}
+</body>
+</html>
